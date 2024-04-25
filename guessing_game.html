@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="guessing_game.css" />
+    <script src="guessing_game.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Memory Game</h1>
+
+      <table id="patternTable">
+        <caption>
+          Pattern
+        </caption>
+      </table>
+
+      <table id="guessTable">
+        <caption>
+          Guess
+        </caption>
+      </table>
+
+      <div>
+        <button onclick="newPattern()">New</button>
+        <button onclick="checkGuess()">Guess</button>
+      </div>
+
+      <div id="congratulation" class="hidden">
+        <h2>Congratulations! You won!</h2>
+      </div>
+
+      <div id="failed" class="hidden">
+        <h2>Sorry! You lost!</h2>
+      </div>
+    </div>
+  </body>
+</html>
